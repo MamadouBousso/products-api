@@ -124,7 +124,7 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\products:product-api-config">
-        <ee:transform doc:name="Transform Message Product">
+        <ee:transform doc:name="Transform Message">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
 output application/json
@@ -133,7 +133,7 @@ output application/json
   productID: "1222",
   productName: "Chocolat",
   productProvider: "Udemy",
-  productDescription: "Chocolat test"
+  productDescription: "Chocolat test Mamadou"
 } as Object {encoding: "UTF-8", mediaType: "application/json"}]]></ee:set-payload>
             </ee:message>
         </ee:transform>
