@@ -132,7 +132,7 @@ output application/json
 {
   productID: "1222",
   productName: "Chocolat",
-  productProvider: "Udemy",
+  productProvider: "Udemy course",
   productDescription: "Chocolat test Mamadou"
 } as Object {encoding: "UTF-8", mediaType: "application/json"}]]></ee:set-payload>
             </ee:message>
