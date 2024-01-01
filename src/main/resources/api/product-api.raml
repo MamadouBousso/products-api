@@ -1,0 +1,26 @@
+#%RAML 1.0
+title: product-api
+baseUri: http://localhost:8081/products
+description: API Test deployment maven
+mediaType:
+  - application/json
+version: "1.0"
+protocols:
+  - HTTP
+/products:
+  get:
+    description: To get products
+    responses:
+      "200":
+        body:
+          application/json:
+            example:
+              strict: true
+              value:
+                productID: "1222"
+                productName: Chocolat
+                productProvider: Udemy
+                productDescription: Chocolat test
+            type: object
+    securedBy: []
+securedBy: []
